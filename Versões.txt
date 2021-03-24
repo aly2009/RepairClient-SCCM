@@ -1,0 +1,32 @@
+1.0 - Versão original
+
+1.1 - Criação de geração de logs
+
+1.2:
+---Remoção do HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\SystemCertificates\SMS\Certificates
+---Criação da Função stopAllProcesses
+---Criação da Função registerMSI 
+---Criação da Função registerWMI
+---Criação de linha de deleção WMIC (wmic /Namespace:\\root path __Namespace where Name="ccm" delete)
+---Melhoria da geração de logs
+---Inclusão da função Test-WMI
+---Inclusão da função repairWMI 
+---Melhorias no formulário principal
+---Criação de percentual de andamento dos registros de DLL e mofs
+
+1.3:
+-Debugged
+
+1.4:
+-Alterações na função Uninstall:
+---Alteração do repositorio do ccmsetup para buscar via HTTP
+---Inclusão de temporizador de parada de serviços
+---Alteração da função de remoção do CMD para Powershell na parte do arquivo SMSCfg
+---Alteração no bloco de remoção da pasta ccm com a parada do serviço Winmgmt
+---Alteração no bloco de limpeza de registro
+---Alteração na parte de remoção do namespace CCM do WMI
+---Alterações na função Repair:
+---Alteração no bloco de verificação da instalação do sccm com a inclusão de temporizador de parada de serviços
+---Alteração da função stopAllProcesses com a inclusão de temporizador de parada de serviços
+
+
